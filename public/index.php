@@ -1,6 +1,5 @@
 <?php
-
-$url = explode('/', $_GET['url']) ?? "home";
+$url = isset($_GET['url']) ? explode('/', $_GET['url']) : ["home"];
 $url_header = $url[0];
 
 $pages = [

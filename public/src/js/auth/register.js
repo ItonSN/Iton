@@ -17,7 +17,7 @@ submit.addEventListener('click', pointer => {
 
 function checkInputs()
 {
-    if (username != "" && email != "" && password != "" && birthDate != "")
+    if (username.value != "" && email.value != "" && password.value != "" && birthDate.value != "")
         return true;
     else
         return false;
