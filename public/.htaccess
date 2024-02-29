@@ -1,0 +1,18 @@
+# ---------------------------
+# Activate the Rewrite Engine
+# ---------------------------
+
+RewriteEngine on
+
+# ------------------------
+# Create the Rewrite Conds
+# ------------------------
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# -----------------------
+# Create the Rewrite Rule
+# -----------------------
+
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
