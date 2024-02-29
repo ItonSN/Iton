@@ -25,7 +25,7 @@
 
         <button type="button" id='submit-b'>Inscription</button>
 
-        <p id='output' style="color: red;"></p>
+        <div id='output' style="color: red;"></div>
     </form>
 
     <script src="../../src/js/auth/register.js"></script>
